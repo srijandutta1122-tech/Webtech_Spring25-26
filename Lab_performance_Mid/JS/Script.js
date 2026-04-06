@@ -21,7 +21,11 @@ window.onload = function ()
           }
        
         var total = unitPrice * quantity * 30;
+        
+        totalInput.value = total;
+        
 
-  }
+    });
+  
  
 }
