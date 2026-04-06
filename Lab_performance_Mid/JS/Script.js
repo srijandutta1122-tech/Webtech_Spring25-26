@@ -5,4 +5,6 @@ window.onload = function ()
   var quantityInput = document.getElementById("QuantityPerDay");
   var totalInput = document.getElementById("TotalPrice");
 
- }
+  quantityInput.addEventListener("input", function ()
+ 
+}
