@@ -23,7 +23,11 @@ window.onload = function ()
         var total = unitPrice * quantity * 30;
         
         totalInput.value = total;
-        
+
+        if (total > 1000 )
+             {
+            alert("Congratulations!You are eligible for a gift coupon!");
+        }
 
     });
   
