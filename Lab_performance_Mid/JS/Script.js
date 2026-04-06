@@ -13,8 +13,12 @@ window.onload = function ()
         {
             quantity = 0;
         }
-
-
+        if (quantity < 0)
+          {
+            alert("Quantity cannot be negative!");
+            quantity = 0;
+            quantityInput.value = 0;
+          }
 
   }
  
