@@ -19,6 +19,8 @@ window.onload = function ()
             quantity = 0;
             quantityInput.value = 0;
           }
+       
+        var total = unitPrice * quantity * 30;
 
   }
  
