@@ -6,5 +6,16 @@ window.onload = function ()
   var totalInput = document.getElementById("TotalPrice");
 
   quantityInput.addEventListener("input", function ()
+  {
+        var quantity = parseInt(quantityInput.value);
+
+        if (isNaN(quantity)) 
+        {
+            quantity = 0;
+        }
+
+
+
+  }
  
 }
