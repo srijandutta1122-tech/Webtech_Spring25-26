@@ -1,0 +1,6 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration</title>
+</head>
+
