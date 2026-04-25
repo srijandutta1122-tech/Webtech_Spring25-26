@@ -22,5 +22,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         setcookie('website',$name,time()+3600,"/");
         setcookie('gender',$gender,time()+3600,"/");
         echo "login Successful<br>";
+
+        $formdata = array("Name"=>$name, "email"=>$email ,"website" => $website, "gender" => $gender);
 }   
 ?> 
