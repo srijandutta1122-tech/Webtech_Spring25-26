@@ -13,6 +13,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
      
     if (!empty($name) && strlen($name) > 5 && filter_var($email, FILTER_VALIDATE_EMAIL) && filter_var($website, FILTER_VALIDATE_URL) && !empty($gender))
      {
+        $_SESSION["name"] = $name;
+        $_SESSION["email"] = $email;
+        $_SESSION["website"] = $website;
+        $_SESSION["gender"] = $gender;
     
 }   
 ?> 
