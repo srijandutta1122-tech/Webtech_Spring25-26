@@ -1,21 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <title>Registration</title>
 </head>
 <body>
-    <h1>Registration</h1>
-    <form action="process_registration.php" method="post">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required><br><br>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br><br>
-
-        <input type="submit" value="Register">
-    </form>
-</body>
-
+    <form method = "post" action="">
+        <table>
+            <tr>
+                <td>
+                    <p style = 'color: blue'>* requird field</label>
+                </td>
+            </tr>
+         <tr>
+              <td>
+                    <label>Name: </label>
+                </td>
+                 <td>
+                    <input type="text" name="name">
+             </td>
+                 <td>
+                    <p style = 'color:blue'>*</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Email: </label>
+                </td>
+             <td>
+                    <input type="email" name = "email">
+                </td>
+               <td>
+                    <p style = 'color:blue'>*</p>
+            </td>
+            </tr>
+                <tr>
+                <td>
+                    <label>Address: </label>
+                </td>
+                <td>
+                    <textarea name="Address" id="Address"></textarea>
+                </td>
+                <td>
+                    <p style = 'color:blue'>*</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Gender: </label>
+                </td>
+                <td>
+                    <input type="radio" value="male" name="gender">
+                    <label> Male</label>
+                </td>
+                <td>
+                    <input type="radio" value="female" name="gender">
+                    <label> Female</label>
+                </td>
+                <td>
+                    <p style = 'color:blue'>*</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit">
+                </td>
+              </tr>
+            </table>
+          </form>
+      </body>
+   </html>
