@@ -11,6 +11,5 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
       $address = $_POST['Address'];
       $gender = $_POST["gender"];
       echo  $gender;
-
-     }
+    }
 ?>
