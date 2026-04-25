@@ -46,5 +46,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $mydata = json_decode($data);
 
     }
+     if(isset($_SESSION["name"]) || isset($_COOKIE["name"]) && isset($_SESSION["email"]) || isset($_COOKIE["email"]) && isset($_SESSION["website"]) || isset($_COOKIE["website"]) && isset($_SESSION["gender"]) || isset($_COOKIE["gender"])) 
+        {
+        echo "Welcome Back!";
+       }
+
 }   
 ?> 
