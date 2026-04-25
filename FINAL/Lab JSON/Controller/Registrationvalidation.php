@@ -24,5 +24,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         echo "login Successful<br>";
 
         $formdata = array("Name"=>$name, "email"=>$email ,"website" => $website, "gender" => $gender);
+        if(file_exists($datafile))
+            {
+            $existdata =file_get_contents($datafile);
+            $tempdata =json_decode($existdata,true);
+        }
+        else{
+            $tempdata =array();
+        }
 }   
 ?> 
