@@ -32,6 +32,18 @@
                     <p style = 'color:blue'>*</p>
             </td>
             </tr>
+            <tr>
+                <td>
+                    <label>Website: </label>
+                </td>
+                <td>
+                    <textarea name="website" id="website"></textarea>
+                </td>
+                <td>
+                    <p style = 'color:red'>*</p>
+                </td>
+              </tr>
+
                <tr>
                 <td>
                     <label>Gender: </label>
