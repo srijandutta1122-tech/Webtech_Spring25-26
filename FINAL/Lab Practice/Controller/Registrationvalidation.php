@@ -8,5 +8,9 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
       echo $name;
       $email = $_POST["email"];
       echo "Email: " .$email;
-      }
+      $address = $_POST['Address'];
+      $gender = $_POST["gender"];
+      echo  $gender;
+
+     }
 ?>
