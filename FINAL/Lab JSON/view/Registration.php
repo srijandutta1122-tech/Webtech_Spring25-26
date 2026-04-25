@@ -1,3 +1,6 @@
+<?php
+include "../Controller/Registrationvalidation.php";
+?>
 <!DOCTYPE html>
 <head>
     <title>Registration</title>
