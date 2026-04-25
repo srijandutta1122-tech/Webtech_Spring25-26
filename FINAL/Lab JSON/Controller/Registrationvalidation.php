@@ -32,5 +32,19 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         else{
             $tempdata =array();
         }
+         $tempdata [] = $formdata;
+        $jsondata = json_encode($tempdata, JSON_PRETTY_PRINT);
+        if(file_put_contents($datafile,$jsondata)!== false)
+            {
+                echo "Data Saved";
+            }
+            else
+                {
+                echo "Please Try Again";
+            }
+        $data = file_get_contents($datafile);
+        $mydata = json_decode($data);
+
+    }
 }   
 ?> 
